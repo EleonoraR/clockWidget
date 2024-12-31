@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+}
+
+/* Clock Widget Container */
+#clock-widget {
+    width: 200px;
+    height: 200px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 4px solid #4caf50;
+}
+
+/* Clock Face */
+#clock-face {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate(0, 0);
+}
+
+/* Hour, Minute, Second Hands */
+#hour, #minute, #second {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    transform-origin: bottom;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hour Hand */
+#hour {
+    width: 6px;
+    height: 50px;
+    background: #4caf50;
+}
+
+/* Minute Hand */
+#minute {
+    width: 4px;
+    height: 70px;
+    background: #76ff03;
+}
+
+/* Second Hand */
+#second {
+    width: 2px;
+    height: 80px;
+    background: #ff5722;
+}
